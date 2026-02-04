@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>For Avdhut</title>
+  <meta charset="UTF-8">
+  <title>For Avdhut 💛</title>
+
   <style>
     body {
       background: #f5ecec;
@@ -10,6 +12,7 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      margin: 0;
     }
 
     .card {
@@ -17,28 +20,41 @@
       padding: 40px;
       width: 420px;
       text-align: center;
-      border-radius: 10px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+      transition: all 0.5s ease;
     }
 
     h1 {
       color: #ff6b81;
     }
 
+    h2 {
+      margin-top: 20px;
+      color: #333;
+    }
+
     p {
       color: #555;
-      line-height: 1.6;
+      line-height: 1.7;
+      font-size: 15px;
     }
 
     button {
-      margin: 10px;
-      padding: 10px 25px;
+      margin: 12px;
+      padding: 12px 28px;
       font-size: 16px;
       background: #ff6b81;
       color: white;
       border: none;
-      border-radius: 20px;
+      border-radius: 25px;
       cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
 
     .hidden {
@@ -49,29 +65,75 @@
 
 <body>
 
+<!-- PAGE 1 -->
 <div id="page1" class="card">
-  <h1>Hi Avdhut</h1>
-  <p>I want to ask you something honestly.</p>
+  <h1>Hi Avdhuttt 💛</h1>
 
-  <h2>Do you accept my proposal? ❤️</h2>
+  <p>
+    It’s your Gayuu here 🙈  
+    and yes… this is me trying to do something brave for the first time ever.
+  </p>
+
+  <p>
+    I know this might sound a little funny 😄,  
+    but trust me — I’m really like this.  
+    Honest, slightly crazy 😜, and very real.
+  </p>
+
+  <p>
+    I made this just for you —  
+    because when something matters to me, I do it properly 🤍.
+  </p>
+
+  <h2>
+    I love you 💖<br>
+    Do you accept my proposal,<br>
+    <span style="font-size:18px;">Mr. AK 😌✨</span>
+  </h2>
+
+  <p style="opacity:0.7; font-size:14px;">
+    Please answer honestly… I’ll still smile either way 🤍
+  </p>
 
   <button onclick="yesClicked()">Yes</button>
   <button onclick="noClicked()">No</button>
 </div>
 
+<!-- PAGE 2 -->
 <div id="page2" class="card hidden">
   <h1>❤️</h1>
 
   <p>
-    Avdhut,  
-    WRITE YOUR OWN MATURE & LOVABLE PARAGRAPH HERE.
+    Avdhut, 💛<br><br>
+
+    Before anything else, you are my best friend — my safest place and my
+    bestest buddy 🤍. With you, everything feels easy and real. I can laugh,
+    stay quiet, be silly, and still feel completely understood 🌿.<br><br>
+
+    I want you to know that I choose you not just for happy moments 😊,
+    but for every situation — even when things are difficult or uncertain 🌧️.
+    I promise to stand by you, support you, and believe in you, no matter what 🤝.<br><br>
+
+    And yes, you’re lucky 😌 — because the girl who cares for you is a little
+    crazy 😜, a little mature 🌸, and loves you deeply and genuinely 💖.<br><br>
+
+    I don’t want anything dramatic. I just want <em>us</em> —
+    honest, steady, and together 💫.
   </p>
 
-  <p>— Gayatri</p>
+  <p style="margin-top:25px; font-style:italic;">
+    — Gayatri 💕
+  </p>
+
+  <p style="margin-top:20px; font-size:15px; opacity:0.8;">
+    This teddy is for youuu 🧸💖<br>
+    it’s your baby, gifted by mee 🤍
+  </p>
 </div>
 
 <script>
   function yesClicked() {
+    document.body.style.background = "#fff5f7";
     document.getElementById("page1").classList.add("hidden");
     document.getElementById("page2").classList.remove("hidden");
   }
