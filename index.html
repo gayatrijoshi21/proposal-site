@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For Avdhut</title>
+  <style>
+    body {
+      background: #f5ecec;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      width: 420px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #ff6b81;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px 25px;
+      font-size: 16px;
+      background: #ff6b81;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="page1" class="card">
+  <h1>Hi Avdhut</h1>
+  <p>I want to ask you something honestly.</p>
+
+  <h2>Do you accept my proposal? ❤️</h2>
+
+  <button onclick="yesClicked()">Yes</button>
+  <button onclick="noClicked()">No</button>
+</div>
+
+<div id="page2" class="card hidden">
+  <h1>❤️</h1>
+
+  <p>
+    Avdhut,  
+    WRITE YOUR OWN MATURE & LOVABLE PARAGRAPH HERE.
+  </p>
+
+  <p>— Gayatri</p>
+</div>
+
+<script>
+  function yesClicked() {
+    document.getElementById("page1").classList.add("hidden");
+    document.getElementById("page2").classList.remove("hidden");
+  }
+
+  function noClicked() {
+    alert("Take your time 🙂 I just wanted you to know how I feel.");
+  }
+</script>
+
+</body>
+</html>
